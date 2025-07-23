@@ -1,0 +1,47 @@
+<pre>{{user | json}}</pre>
+<section class="mt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card shadow-lg">
+                    <div class="card-header bg-dark text-white">
+                        <p class="h3">Register</p>
+                    </div>
+                    <div class="card-body">
+                        <form (submit)="submitRegister()">
+                        <div class="mb-2">
+                            <input type="text" name="name" class="form-control" placeholder="Name" [(ngModel)]="user.name">
+                        </div>
+                        <div class="mb-2">
+                            <input type="email" name="email" class="form-control" placeholder="Email" [(ngModel)]="user.email">
+                        </div>
+                        <div class="mb-2">
+                            <input type="password" name="password" class="form-control" placeholder="Password"
+                                [(ngModel)]="user.password">
+                        </div>
+                        <div class="mb-2">
+                            <select class="form-control" name="designation" [(ngModel)]="user.designation">
+                                <option value="">Select designation</option>
+                                <option value="Software Engineer">Software Engineer</option>
+
+                                <option value="Senior Software Engineer">Senior Software Engineer</option>
+                                <option value="Tech Lead">Tech Lead</option>
+                            </select>
+                        </div>
+                        <div class="mb-2">
+                            <textarea rows="4" name="bio" class="form-control" placeholder="Bio" [(ngModel)]="user.bio"></textarea>
+                        </div>
+                        <div class="mb-2">
+                            <input type="checkbox" name="terms" class="form-check-input" [(ngModel)]="user.terms">Accept terms
+                        </div>
+                        <div class="mb-2">
+                            <input type="submit" class="btn btn-warning btn-sm" value="Register">
+                        </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

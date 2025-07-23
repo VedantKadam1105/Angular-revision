@@ -14,6 +14,7 @@ import { SmsAppComponent } from './components/sms-app/sms-app.component';
 import { ShowPasswordComponent } from './components/show-password/show-password.component';
 import { AmountRangeComponent } from './components/amount-range/amount-range.component';
 import { ThemeComponent } from './components/theme/theme.component';
+import { UserRegisterComponent } from './components/user-register/user-register.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ThemeComponent } from './components/theme/theme.component';
     SmsAppComponent,
     ShowPasswordComponent,
     AmountRangeComponent,
-    ThemeComponent
+    ThemeComponent,
+    UserRegisterComponent
   ],
   imports: [
     BrowserModule,
