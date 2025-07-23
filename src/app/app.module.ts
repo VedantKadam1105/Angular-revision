@@ -15,6 +15,7 @@ import { ShowPasswordComponent } from './components/show-password/show-password.
 import { AmountRangeComponent } from './components/amount-range/amount-range.component';
 import { ThemeComponent } from './components/theme/theme.component';
 import { UserRegisterComponent } from './components/user-register/user-register.component';
+import { AuthUserComponent } from './components/auth-user/auth-user.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { UserRegisterComponent } from './components/user-register/user-register.
     ShowPasswordComponent,
     AmountRangeComponent,
     ThemeComponent,
-    UserRegisterComponent
+    UserRegisterComponent,
+    AuthUserComponent
   ],
   imports: [
     BrowserModule,
