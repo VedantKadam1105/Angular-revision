@@ -16,6 +16,7 @@ import { AmountRangeComponent } from './components/amount-range/amount-range.com
 import { ThemeComponent } from './components/theme/theme.component';
 import { UserRegisterComponent } from './components/user-register/user-register.component';
 import { AuthUserComponent } from './components/auth-user/auth-user.component';
+import { ShoppingComponent } from './components/shopping/shopping.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { AuthUserComponent } from './components/auth-user/auth-user.component';
     AmountRangeComponent,
     ThemeComponent,
     UserRegisterComponent,
-    AuthUserComponent
+    AuthUserComponent,
+    ShoppingComponent
   ],
   imports: [
     BrowserModule,
