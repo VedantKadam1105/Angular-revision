@@ -9,6 +9,7 @@ import { ProductItemComponent } from './components/product-item/product-item.com
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { FormsModule } from '@angular/forms';
 import { ChangeUsernameComponent } from './components/change-username/change-username.component';
+import { ChangeUsernameAutoComponent } from './components/change-username-auto/change-username-auto.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { ChangeUsernameComponent } from './components/change-username/change-use
     WishMessageComponent,
     ProductItemComponent,
     ShoppingCartComponent,
-    ChangeUsernameComponent
+    ChangeUsernameComponent,
+    ChangeUsernameAutoComponent
   ],
   imports: [
     BrowserModule,
