@@ -7,6 +7,9 @@ import { CounterComponent } from './components/counter/counter.component';
 import { WishMessageComponent } from './components/wish-message/wish-message.component';
 import { ProductItemComponent } from './components/product-item/product-item.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { FormsModule } from '@angular/forms';
+import { ChangeUsernameComponent } from './components/change-username/change-username.component';
+
 
 @NgModule({
   declarations: [
@@ -14,11 +17,13 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
     CounterComponent,
     WishMessageComponent,
     ProductItemComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    ChangeUsernameComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
