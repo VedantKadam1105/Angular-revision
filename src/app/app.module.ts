@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { WishMessageComponent } from './components/wish-message/wish-message.component';
 import { ProductItemComponent } from './components/product-item/product-item.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CounterComponent,
     WishMessageComponent,
-    ProductItemComponent
+    ProductItemComponent,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule,

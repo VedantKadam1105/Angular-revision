@@ -1,0 +1,65 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="h3 text-danger">Shopping cart</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatum illo impedit necessitatibus
+                    odio aliquid consectetur eaque, totam vero unde. Fugit placeat quia mollitia rem laborum dicta, eum
+                    officia sunt doloremque delectus consectetur. Mollitia molestias eius magni impedit, reiciendis
+                    explicabo omnis dolorem, odio assumenda autem nihil, maxime provident eveniet veritatis.</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="mt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <table class="table table-hover text-center table-striped">
+                    <thead class="bg-secondary text-white">
+                        <tr>
+                            <th>Sno</th>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Qty</th>
+                            <th>Total</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let product of products">
+                            <td>{{product.sno}}</td>
+                            <td><img [src]="product.image" height="50" width="50"></td>
+                            <td>{{product.name}}</td>
+                            <td>{{product.price | currency : 'INR'}}</td>
+                            <td><i (click)="decrementQty(product)" class="fa fa-minus-square"></i>{{product.qty}} <i (click)="incrementQty(product)" class="fa fa-plus-square"></i></td>
+                            <td>{{product.price*product.qty | currency : 'INR'}}</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                            </td>
+                            <td>Grand total</td>
+                            <td>{{calculateTotal() | currency : 'INR'}}</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <ul>
+    <li>{{products[0].name}}</li>
+    <li>{{products[1].name}}</li>
+    <li>{{products[2].name}}</li>
+    <li>{{products[3].name}}</li>
+
+</ul> -->
+
+
+<ul>
+    <li *ngFor="let product of products">{{product.name}}</li>
+</ul>
