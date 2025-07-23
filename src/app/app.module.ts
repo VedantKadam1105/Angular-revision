@@ -10,6 +10,7 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { FormsModule } from '@angular/forms';
 import { ChangeUsernameComponent } from './components/change-username/change-username.component';
 import { ChangeUsernameAutoComponent } from './components/change-username-auto/change-username-auto.component';
+import { SmsAppComponent } from './components/sms-app/sms-app.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ChangeUsernameAutoComponent } from './components/change-username-auto/c
     ProductItemComponent,
     ShoppingCartComponent,
     ChangeUsernameComponent,
-    ChangeUsernameAutoComponent
+    ChangeUsernameAutoComponent,
+    SmsAppComponent
   ],
   imports: [
     BrowserModule,

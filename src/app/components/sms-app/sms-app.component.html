@@ -1,0 +1,25 @@
+<section class="mt-3">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <p class="h3">SMS APP</p>
+                </div>
+                <div class="card-body bg-light">
+                    <form>
+                        <textarea rows="4" class="form-control" placeholder="your text here" name="message" [(ngModel)]="message" [maxlength]=maxlength>
+
+                        </textarea>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <p class="h4">The character remaning :
+                        <span class="fw-bold">{{message.length}}/{{maxlength}}</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
